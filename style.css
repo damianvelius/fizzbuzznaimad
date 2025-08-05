@@ -1,0 +1,89 @@
+:root {
+  --backGround: #e2f8ff;
+  --text: #1f55a5;
+  --decoration: #ffffffb4;
+  --ok: #22c55e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  background-color: var(--backGround);
+  color: var(--text);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 10px;
+  font-size: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.section-chalenge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+
+#resultado {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 30px;
+  padding: 1rem;
+}
+
+#resultado div {
+  text-align: center;
+  padding: 1px;
+  border: 1px solid #ccc;
+}
+
+.fizz {
+  color: blue;
+  font-weight: bold;
+  background-color: #ccc;
+}
+.buzz {
+  color: green;
+  font-weight: bold;
+  background-color: #ccc;
+}
+.fizzbuzz {
+  color: purple;
+  font-weight: bold;
+  background-color: #ccc;
+}
+
+.custom-fizz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  width: 100%;
+}
